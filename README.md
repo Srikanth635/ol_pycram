@@ -1,10 +1,8 @@
-# Project Title
 
-A brief description of your project.
 
 ## 🚀 Docker Usage
 
-Here's how to get your application running using Docker.
+Here's how to get the application running using Docker.
 
 ### 1. Build the Docker Image
 
@@ -24,7 +22,7 @@ Once the image is successfully built, you can run it as a container.
 
 #### With GPU Support
 
-If your application requires GPU access (e.g., for machine learning tasks), use this command:
+If your application requires GPU access, use this command (Recommended):
 
 ```bash
 docker run -d --gpus=all -p 8081:5001 --name {container_name} {image_name}
@@ -57,7 +55,7 @@ docker exec -it {container_name} bash
 
 ## 🧪 Testing the Application
 
-You can test the running service by sending a POST request to the `/update` endpoint. The inputs should be structured as shown in `Pycram_AD_Updates/tests/test_flask.py`.
+You can test the running service by sending a POST request to the `/update` endpoint. The inputs should be structured as shown in `Pycram_ADs/tests/testing_api.py`.
 
 Here is an example Python script using the `requests` library to test the endpoint.
 
